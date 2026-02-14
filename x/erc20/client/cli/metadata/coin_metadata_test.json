@@ -1,0 +1,21 @@
+{
+  "metadata": [
+    {
+      "description": "The native staking and governance token of the Qie chain",
+      "denom_units": [
+        {
+          "denom": "aqie",
+          "exponent": 0
+        },
+        {
+          "denom": "qie",
+          "exponent": 18
+        }
+      ],
+      "base": "aqie",
+      "display": "aqie",
+      "name": "aqie",
+      "symbol": "QIE"
+    }
+  ]
+}
