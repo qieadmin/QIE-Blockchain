@@ -133,4 +133,3 @@ See the LICENSE file for details.
 ## ⚠️ Disclaimer
 
 QIE Blockchain is under active development.
-Use in production environments at your own risk.
