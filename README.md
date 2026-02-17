@@ -58,6 +58,12 @@ cd cmd/qied
 go build
 ```
 
+### Set as global path 
+
+```bash
+cp -r qied /usr/bin
+```
+
 ### Initialize Node
 
 ```bash
