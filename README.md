@@ -1,14 +1,14 @@
 # QIE Blockchain
 
-**QIE Blockchain** is a high-performance, EVM-compatible blockchain designed for scalability, interoperability, and developer-friendly decentralized application deployment.
+**QIE Blockchain** is a high-performance, EVM-compatible blockchain built for scalability, interoperability, and developer-friendly decentralized application deployment.
 
-It delivers fast consensus, low fees, and cross-chain capabilities to support next-generation Web3 applications and infrastructure.
+It provides fast consensus, low transaction costs, and cross-chain capabilities to support next-generation Web3 infrastructure and applications.
 
 ---
 
 ## 🌐 Overview
 
-QIE Blockchain provides a robust environment for building decentralized applications using familiar Ethereum tooling while benefiting from a modern, scalable blockchain architecture.
+QIE Blockchain offers a powerful platform for building decentralized applications using familiar Ethereum tools while leveraging a modern and scalable blockchain architecture.
 
 ### Key Features
 
@@ -17,7 +17,7 @@ QIE Blockchain provides a robust environment for building decentralized applicat
 * 🧠 Ethereum smart contract compatibility
 * 🔗 Cross-chain interoperability support
 * 🛠 Developer-friendly infrastructure
-* 🌍 Open-source and community driven
+* 🌍 Open-source and community-driven
 
 ---
 
@@ -25,7 +25,7 @@ QIE Blockchain provides a robust environment for building decentralized applicat
 
 * Cosmos SDK-based architecture
 * CometBFT consensus engine
-* Ethereum Virtual Machine compatibility
+* Ethereum Virtual Machine (EVM) compatibility
 * IBC-enabled cross-chain communication
 
 ---
@@ -34,9 +34,13 @@ QIE Blockchain provides a robust environment for building decentralized applicat
 
 ### Prerequisites
 
-* Go >= 1.21
+Ensure the following are installed:
+
+* Go **1.21+**
 * Git
 * Make
+
+---
 
 ### Clone Repository
 
@@ -45,30 +49,42 @@ git clone https://github.com/qieadmin/QIE-Blockchain.git
 cd QIE-Blockchain
 ```
 
-### Build
+---
+
+### Build (Recommended)
 
 ```bash
 make install
 ```
 
-### Alternative way for build
+---
+
+### Alternative Build Method
 
 ```bash
 cd cmd/qied
 go build
 ```
 
-### Set as global path 
+---
+
+### Add Binary to Global Path
 
 ```bash
-cp -r qied /usr/bin
+cp qied /usr/bin/
 ```
+
+*(You may need `sudo` depending on your system permissions.)*
+
+---
 
 ### Initialize Node
 
 ```bash
 qied init my-node --chain-id qie_1990-1
 ```
+
+---
 
 ### Start Node
 
@@ -80,13 +96,13 @@ qied start
 
 ## 🔧 Configuration
 
-After initialization, configuration files will be located at:
+After initialization, node configuration files are stored in:
 
 ```
 ~/.qied/
 ```
 
-Important files:
+Important configuration files:
 
 * `config/config.toml`
 * `config/app.toml`
@@ -96,7 +112,7 @@ Important files:
 
 ## 🧪 Testing
 
-Run unit tests:
+Run the test suite:
 
 ```bash
 make test
@@ -106,32 +122,36 @@ make test
 
 ## 📡 Network Information
 
-| Parameter       | Value          |
-| --------------- | -------------- |
-| Chain ID        | `qie_1990-1`   |
-| Token Symbol    | `QIE`          |
-| Consensus       | CometBFT       |
-| Smart Contracts | EVM Compatible |
+| Parameter           | Value          |
+| ------------------- | -------------- |
+| **Chain ID**        | `qie_1990-1`   |
+| **Token Symbol**    | `QIE`          |
+| **Consensus**       | CometBFT       |
+| **Smart Contracts** | EVM Compatible |
 
 ---
 
 ## 🤝 Contributing
 
-We welcome community contributions.
+We welcome contributions from the community.
 
 1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Submit a Pull Request
+2. Create a new branch for your feature or fix
+3. Commit your changes with clear messages
+4. Open a Pull Request
 
-Please ensure your code builds successfully and tests pass before submitting.
+Please ensure:
+
+* The project builds successfully
+* Tests pass
+* Code follows clean standards
 
 ---
 
 ## 📜 License
 
 This project is licensed under the **Apache 2.0 License**.
-See the LICENSE file for details.
+See the `LICENSE` file for full details.
 
 ---
 
@@ -140,9 +160,10 @@ See the LICENSE file for details.
 * GitHub: https://github.com/qieadmin/QIE-Blockchain
 * Website: https://qie.digital
 * Documentation: https://docs.qie.digital
-  
+
 ---
 
 ## ⚠️ Disclaimer
 
-QIE Blockchain is under active development.
+QIE Blockchain is under active development and may change frequently.
+Use in production environments at your own discretion.
