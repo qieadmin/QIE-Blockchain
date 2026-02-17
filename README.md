@@ -51,11 +51,12 @@ cd QIE-Blockchain
 make install
 ```
 
-### Or
+### Alternative way for build
 
 ```bash
 cd cmd/qied
 go build
+```
 
 ### Initialize Node
 
